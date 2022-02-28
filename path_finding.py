@@ -133,6 +133,7 @@ def algorithm(draw , grid , start , end):
 		if current == end :
 			reconstruct_path(came_from , end , draw)
 			end.make_end() 
+			start.make_start()
 			return True
 
 		for neighbour in current.neighbours:
